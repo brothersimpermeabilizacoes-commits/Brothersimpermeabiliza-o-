@@ -1,959 +1,957 @@
-.logo {
-    width: 180px;
-    max-width: 80%;
-    display: block;
-    margin: 20px auto;
-}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>Brothers Impermeabilização | São Paulo</title>
+<meta name="description" content="Brothers Impermeabilização — proteção contra infiltrações.">
+<meta name="theme-color" content="#102d4f">
 
-<meta name="description"
-content="Brothers Impermeabilização - serviços profissionais contra infiltrações, vazamentos e umidade. Lajes, piscinas, banheiros, telhados e reservatórios.">
+<title>Brothers Impermeabilização</title>
 
 <style>
-
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    color:#172b44;
-    background:#f5f5f5;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#17212b;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+  width:92%;
+  max-width:1120px;
+  margin:auto;
 }
 
-/* =========================
-   TOPO
-========================= */
+/* MENU */
 
 header{
-    background:#10263d;
-    color:white;
-    padding:12px 0;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.25);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid #e5e9ed;
 }
 
 .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#102d4f;
+  font-weight:bold;
 }
 
-.logo img{
-    width:65px;
-    height:65px;
-    object-fit:contain;
-    border-radius:8px;
+.brand img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
 }
 
-.logo h2{
-    font-size:20px;
-    color:white;
+.brand small{
+  display:block;
+  color:#64717d;
+  font-size:10px;
 }
 
-.logo span{
-    color:#ff9800;
-    font-size:12px;
-    font-weight:bold;
+nav{
+  display:flex;
+  align-items:center;
+  gap:22px;
 }
 
-.menu{
-    display:flex;
-    gap:22px;
+nav a{
+  font-size:14px;
+  font-weight:bold;
 }
 
-.menu a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:14px;
+nav a:hover{
+  color:#ef7f1a;
 }
 
-.menu a:hover{
-    color:#ff9800;
+.nav-btn{
+  background:#102d4f;
+  color:white!important;
+  padding:11px 18px;
+  border-radius:30px;
 }
 
-/* =========================
-   BOTÕES
-========================= */
-
-.btn{
-    display:inline-block;
-    padding:15px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn-orange{
-    background:#ff8c00;
-    color:white;
-}
-
-.btn-whatsapp{
-    background:#25d366;
-    color:white;
-}
-
-/* =========================
-   CAPA
-========================= */
+/* HERO */
 
 .hero{
-    min-height:600px;
-    display:flex;
-    align-items:center;
-    color:white;
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  color:white;
 
-    background:
-    linear-gradient(
-        90deg,
-        rgba(8,22,36,.96),
-        rgba(8,22,36,.78),
-        rgba(8,22,36,.35)
-    ),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85");
-
-    background-size:cover;
-    background-position:center;
+  background:
+  linear-gradient(100deg,rgba(7,27,49,.95),rgba(16,45,79,.65)),
+  url("assets/obra-01.jpg") center/cover;
 }
 
 .hero-content{
-    max-width:720px;
+  max-width:720px;
+  padding:80px 0;
 }
 
 .tag{
-    color:#ff9800;
-    font-weight:bold;
-    letter-spacing:1px;
-    margin-bottom:15px;
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.4);
+  border-radius:30px;
+  margin-bottom:22px;
+  font-size:13px;
+  font-weight:bold;
 }
 
-.hero h1{
-    font-size:52px;
-    line-height:1.05;
-    margin-bottom:20px;
+h1{
+  font-size:clamp(40px,6vw,68px);
+  line-height:1.02;
+  margin-bottom:22px;
+}
+
+h1 span{
+  color:#f5ad19;
 }
 
 .hero p{
-    font-size:20px;
-    color:#eee;
-    line-height:1.5;
-    margin-bottom:30px;
+  font-size:18px;
+  color:#e7edf3;
+  margin-bottom:30px;
 }
 
-.telefones{
-    margin-top:25px;
-    font-size:18px;
-    line-height:1.8;
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
 }
 
-/* =========================
-   SEÇÕES
-========================= */
+.btn{
+  min-height:50px;
+  padding:0 23px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  font-weight:bold;
+}
+
+.primary{
+  background:#f5ad19;
+  color:#17212b;
+}
+
+.outline{
+  border:1px solid rgba(255,255,255,.5);
+  color:white;
+}
+
+/* DESTAQUES */
+
+.trust{
+  margin-top:-45px;
+  position:relative;
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(7,27,49,.12);
+}
+
+.trust-item{
+  padding:25px;
+  border-right:1px solid #e5e9ed;
+}
+
+.trust-item:last-child{
+  border:0;
+}
+
+.trust-item strong{
+  display:block;
+  color:#102d4f;
+  font-size:19px;
+}
+
+.trust-item span{
+  color:#64717d;
+  font-size:13px;
+}
+
+/* SEÇÕES */
 
 section{
-    padding:75px 0;
+  padding:90px 0;
 }
 
-.titulo{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:15px;
+.section-head{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 45px;
 }
 
-.subtitulo{
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 45px;
-    color:#666;
-    font-size:18px;
-    line-height:1.5;
+.eyebrow{
+  color:#ef7f1a;
+  font-size:12px;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
 }
 
-/* =========================
-   SERVIÇOS
-========================= */
-
-.servicos{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
+h2{
+  color:#102d4f;
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.1;
+  margin:10px 0 14px;
 }
 
-.card{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 18px rgba(0,0,0,.12);
-    transition:.3s;
+.section-head p{
+  color:#64717d;
 }
 
-.card:hover{
-    transform:translateY(-6px);
+/* SERVIÇOS */
+
+.services,
+.gallery{
+  background:#f4f6f8;
 }
 
-.card-img{
-    height:170px;
-    background-size:cover;
-    background-position:center;
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
-.card-content{
-    padding:20px;
+.service{
+  background:white;
+  padding:28px;
+  border-radius:20px;
+  border:1px solid #e5e9ed;
+  transition:.2s;
 }
 
-.card h3{
-    font-size:21px;
-    margin-bottom:10px;
+.service:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 35px rgba(7,27,49,.12);
 }
 
-.card p{
-    color:#666;
-    line-height:1.5;
+.icon{
+  width:50px;
+  height:50px;
+  display:grid;
+  place-items:center;
+  background:#fff4d9;
+  border-radius:14px;
+  font-size:24px;
+  margin-bottom:18px;
 }
 
-/* =========================
-   DIFERENCIAIS
-========================= */
-
-.diferenciais{
-    background:#10263d;
-    color:white;
+.service h3{
+  color:#102d4f;
+  margin-bottom:8px;
 }
 
-.diferenciais .titulo{
-    color:white;
+.service p{
+  color:#64717d;
+  font-size:14px;
 }
 
-.diferenciais-grid{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:20px;
-    text-align:center;
+/* SOBRE */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
 }
 
-.diferencial{
-    padding:20px 10px;
+.about-image{
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(7,27,49,.12);
 }
 
-.icone{
-    font-size:42px;
-    margin-bottom:12px;
+.about-image img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
 }
 
-.diferencial h4{
-    font-size:16px;
-    line-height:1.4;
+.about-text p{
+  color:#64717d;
+  margin:15px 0;
 }
 
-/* =========================
-   GALERIA
-========================= */
-
-.galeria{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+.checks{
+  display:grid;
+  gap:12px;
+  margin:25px 0;
 }
 
-.galeria-item{
-    height:260px;
-    border-radius:12px;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-    overflow:hidden;
+.check{
+  font-weight:bold;
+  display:flex;
+  gap:10px;
 }
 
-.galeria-item span{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    padding:15px;
-    background:rgba(0,0,0,.72);
-    color:white;
-    font-weight:bold;
+.check b{
+  color:#ef7f1a;
 }
 
-/* =========================
-   SOBRE
-========================= */
+/* GALERIA */
 
-.sobre{
-    background:#10263d;
-    color:white;
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
 }
 
-.sobre-grid{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:50px;
-    align-items:center;
+.gallery-card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 5px 18px rgba(0,0,0,.06);
 }
 
-.sobre-logo{
-    text-align:center;
+.gallery-card img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
 }
 
-.sobre-logo img{
-    max-width:260px;
-    width:100%;
-    background:white;
-    border-radius:12px;
-    padding:10px;
+.caption{
+  padding:15px;
+  color:#102d4f;
+  font-weight:bold;
+  font-size:13px;
 }
 
-.sobre h2{
-    font-size:36px;
-    margin-bottom:20px;
+/* REDES */
+
+.social-box{
+  background:linear-gradient(135deg,#102d4f,#071b31);
+  color:white;
+  border-radius:28px;
+  padding:48px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:35px;
+  align-items:center;
 }
 
-.sobre p{
-    font-size:17px;
-    line-height:1.7;
-    margin-bottom:15px;
+.social-box h2{
+  color:white;
 }
 
-.sobre h3{
-    color:#ff9800;
-    margin-top:25px;
+.social-box p{
+  color:#d8e1e9;
 }
 
-/* =========================
-   CONTATO
-========================= */
-
-.contato{
-    background:#eee;
+.socials{
+  display:grid;
+  gap:12px;
 }
 
-.contato-box{
-    background:white;
-    max-width:850px;
-    margin:auto;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.12);
+.social{
+  padding:16px 18px;
+  background:rgba(255,255,255,.1);
+  border-radius:13px;
+  font-weight:bold;
+  display:flex;
+  justify-content:space-between;
 }
 
-.contato-box h3{
-    font-size:25px;
-    margin-bottom:25px;
+.social:hover{
+  background:rgba(255,255,255,.18);
 }
 
-.contato-info{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:35px;
-    margin-bottom:25px;
+.arrow{
+  color:#f5ad19;
 }
 
-.contato-info div{
-    font-size:17px;
+/* CONTATO */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
 }
 
-.instagram{
-    color:#e1306c;
+.contact-card{
+  padding:28px;
+  border:1px solid #e5e9ed;
+  border-radius:20px;
+  box-shadow:0 6px 22px rgba(7,27,49,.05);
 }
 
-/* =========================
-   RODAPÉ
-========================= */
+.contact-card h3{
+  color:#102d4f;
+  margin-bottom:14px;
+}
+
+.contact-link{
+  display:block;
+  padding:13px 0;
+  border-bottom:1px solid #e5e9ed;
+  font-weight:bold;
+  color:#304455;
+}
+
+.whatsapp{
+  background:#1fa855;
+  color:white!important;
+  padding:14px;
+  border-radius:12px;
+  text-align:center;
+  margin-top:16px;
+}
+
+/* RODAPÉ */
 
 footer{
-    background:#071827;
-    color:white;
-    text-align:center;
-    padding:30px 15px;
+  background:#071b31;
+  color:#b9c7d3;
+  padding:38px 0;
+}
+
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
 }
 
 footer strong{
-    font-size:20px;
+  color:white;
 }
 
-footer p{
-    margin-top:10px;
-    color:#ccc;
+/* WHATSAPP */
+
+.floating{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#1fa855;
+  color:white;
+  display:grid;
+  place-items:center;
+  font-size:27px;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  z-index:999;
 }
 
-/* =========================
-   WHATSAPP FLUTUANTE
-========================= */
+/* CELULAR */
 
-.whatsapp-float{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:#25d366;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:32px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    z-index:9999;
+@media(max-width:850px){
+
+  nav{
+    display:none;
+  }
+
+  .trust-grid,
+  .service-grid,
+  .gallery-grid,
+  .about-grid,
+  .contact-grid,
+  .social-box{
+    grid-template-columns:1fr;
+  }
+
+  .trust-item{
+    border-right:0;
+    border-bottom:1px solid #e5e9ed;
+  }
+
+  .about-image img{
+    height:380px;
+  }
+
+  .social-box{
+    padding:32px 24px;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  .footer-grid{
+    flex-direction:column;
+  }
 }
 
-/* =========================
-   CELULAR
-========================= */
+@media(max-width:520px){
 
-@media(max-width:900px){
+  .brand img{
+    width:50px;
+    height:50px;
+  }
 
-    .menu{
-        display:none;
-    }
+  .hero{
+    min-height:600px;
+  }
 
-    .hero{
-        min-height:650px;
-    }
+  .hero-content{
+    padding:70px 0;
+  }
 
-    .hero h1{
-        font-size:39px;
-    }
+  .hero p{
+    font-size:16px;
+  }
 
-    .servicos{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .buttons .btn{
+    width:100%;
+  }
 
-    .diferenciais-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .galeria{
-        grid-template-columns:1fr;
-    }
-
-    .sobre-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
+  .gallery-card img{
+    height:280px;
+  }
 }
-
-@media(max-width:550px){
-
-    .container{
-        width:92%;
-    }
-
-    .logo img{
-        width:55px;
-        height:55px;
-    }
-
-    .logo h2{
-        font-size:17px;
-    }
-
-    .hero{
-        min-height:650px;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .servicos{
-        grid-template-columns:1fr;
-    }
-
-    .diferenciais-grid{
-        grid-template-columns:1fr;
-    }
-
-    .titulo{
-        font-size:29px;
-    }
-
-    .contato-box{
-        padding:25px 15px;
-    }
-
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     TOPO
-========================= -->
-
 <header>
-
 <div class="container nav">
 
-<div class="logo">
-
-<!-- TROQUE PELO LINK DO SEU LOGO -->
-<img src="URL-DO-SEU-LOGO"
-alt="Brothers Impermeabilização">
-
+<a class="brand" href="#inicio">
+<img src="assets/logo.jpg" alt="Brothers Impermeabilização">
 <div>
-<h2>BROTHERS</h2>
-<span>IMPERMEABILIZAÇÃO</span>
+Brothers
+<small>IMPERMEABILIZAÇÃO</small>
 </div>
-
-</div>
-
-<nav class="menu">
-
-<a href="#inicio">Início</a>
-<a href="#servicos">Serviços</a>
-<a href="#galeria">Galeria</a>
-<a href="#sobre">Sobre</a>
-<a href="#contato">Contato</a>
-
-</nav>
-
-<a class="btn btn-orange"
-href="https://wa.me/5511940364528"
-target="_blank">
-
-📲 Orçamento
-
 </a>
 
-</div>
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#obras">Obras</a>
+<a href="#redes">Redes sociais</a>
+<a class="nav-btn"
+href="https://wa.me/5511954160275?text=Olá%20Brothers%20Impermeabilização,%20gostaria%20de%20solicitar%20um%20orçamento."
+target="_blank">
+Orçamento
+</a>
+</nav>
 
+</div>
 </header>
 
 
-<!-- =========================
-     CAPA
-========================= -->
+<main id="inicio">
 
-<section class="hero" id="inicio">
+<section class="hero">
 
-<div class="container">
+<div class="container hero-content">
 
-<div class="hero-content">
-
-<div class="tag">
-▶ BROTHERS IMPERMEABILIZAÇÃO
-</div>
+<div class="tag">🛡️ 6 anos de garantia</div>
 
 <h1>
-PROTEÇÃO CONTRA INFILTRAÇÕES E VAZAMENTOS
+Proteção contra <span>infiltração.</span>
 </h1>
 
 <p>
-Soluções profissionais em impermeabilização
-para residências, empresas e condomínios.
+Impermeabilização profissional para proteger sua obra contra infiltrações,
+com soluções para lajes, telhados, banheiros, piscinas e outras áreas.
 </p>
 
-<a class="btn btn-whatsapp"
-href="https://wa.me/5511940364528?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+<div class="buttons">
+
+<a class="btn primary"
+href="https://wa.me/5511954160275?text=Olá%20Brothers%20Impermeabilização,%20gostaria%20de%20solicitar%20um%20orçamento."
+target="_blank">
+Solicitar orçamento
+</a>
+
+<a class="btn outline" href="#obras">
+Ver nossas obras
+</a>
+
+</div>
+</div>
+</section>
+
+
+<div class="trust">
+
+<div class="container trust-grid">
+
+<div class="trust-item">
+<strong>6 anos</strong>
+<span>de garantia</span>
+</div>
+
+<div class="trust-item">
+<strong>Obras reais</strong>
+<span>Confira alguns dos nossos trabalhos</span>
+</div>
+
+<div class="trust-item">
+<strong>Atendimento</strong>
+<span>Fale conosco pelo WhatsApp</span>
+</div>
+
+</div>
+</div>
+
+
+<section class="services" id="servicos">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">O que fazemos</div>
+
+<h2>Serviços de impermeabilização</h2>
+
+<p>
+Soluções para proteger diferentes áreas da sua construção contra infiltrações.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<article class="service">
+<div class="icon">🏠</div>
+<h3>Lajes</h3>
+<p>Impermeabilização de lajes e áreas expostas.</p>
+</article>
+
+<article class="service">
+<div class="icon">🏢</div>
+<h3>Telhados</h3>
+<p>Impermeabilização de coberturas e pontos sujeitos à entrada de água.</p>
+</article>
+
+<article class="service">
+<div class="icon">🚿</div>
+<h3>Banheiros</h3>
+<p>Proteção de áreas molhadas contra infiltrações.</p>
+</article>
+
+<article class="service">
+<div class="icon">💧</div>
+<h3>Piscinas</h3>
+<p>Impermeabilização de estruturas de piscina.</p>
+</article>
+
+<article class="service">
+<div class="icon">🔥</div>
+<h3>Manta asfáltica</h3>
+<p>Aplicação de sistemas com manta asfáltica.</p>
+</article>
+
+<article class="service">
+<div class="icon">🔧</div>
+<h3>Infiltrações</h3>
+<p>Avaliação e execução do sistema adequado para cada serviço.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+
+<section id="sobre">
+
+<div class="container about-grid">
+
+<div class="about-image">
+<img src="assets/obra-02.jpg"
+alt="Impermeabilização realizada pela Brothers">
+</div>
+
+<div class="about-text">
+
+<div class="eyebrow">Brothers Impermeabilização</div>
+
+<h2>Seu imóvel protegido contra infiltrações</h2>
+
+<p>
+Trabalhamos com impermeabilização em residências, comércios e obras,
+buscando entregar um serviço bem executado e adequado às condições de cada área.
+</p>
+
+<div class="checks">
+
+<div class="check">
+<b>✓</b>
+<span>Serviços de impermeabilização</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Atendimento para diferentes tipos de áreas</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>6 anos de garantia</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Orçamento pelo WhatsApp</span>
+</div>
+
+</div>
+
+<a class="btn primary"
+href="https://wa.me/5511954160275?text=Olá%20Brothers,%20quero%20fazer%20um%20orçamento."
+target="_blank">
+Falar com a Brothers
+</a>
+
+</div>
+</div>
+</section>
+
+
+<section class="gallery" id="obras">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Portfólio</div>
+
+<h2>Alguns dos nossos trabalhos</h2>
+
+<p>
+Fotos reais de serviços de impermeabilização realizados pela Brothers.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+<article class="gallery-card">
+
+<img src="assets/obra-01.jpg"
+alt="Laje impermeabilizada">
+
+<div class="caption">
+Impermeabilização de laje
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="assets/obra-02.jpg"
+alt="Teste de impermeabilização">
+
+<div class="caption">
+Teste de estanqueidade
+</div>
+
+</article>
+
+
+<article class="gallery-card">
+
+<img src="assets/obra-03.jpg"
+alt="Preparação de área">
+
+<div class="caption">
+Preparação da área
+</div>
+
+</article>
+
+</div>
+</div>
+</section>
+
+
+<section id="redes">
+
+<div class="container">
+
+<div class="social-box">
+
+<div>
+
+<div class="eyebrow">
+Acompanhe nosso trabalho
+</div>
+
+<h2>Brothers nas redes sociais</h2>
+
+<p>
+Veja fotos, vídeos e novidades dos nossos serviços.
+</p>
+
+</div>
+
+
+<div class="socials">
+
+<a class="social"
+href="https://www.instagram.com/brothersimpermeabilizacoes?stkn=Nnlia3FkdWFuc3Qx"
 target="_blank">
 
-📲 SOLICITAR ORÇAMENTO
+<span>📸 Instagram</span>
+<span class="arrow">→</span>
 
 </a>
 
-<div class="telefones">
 
-📞 (11) 94036-4528<br>
+<a class="social"
+href="https://www.facebook.com/share/19argx97bR/"
+target="_blank">
+
+<span>👍 Facebook</span>
+<span class="arrow">→</span>
+
+</a>
+
+
+<a class="social"
+href="https://wa.me/5511954160275?text=Olá%20Brothers%20Impermeabilização,%20gostaria%20de%20solicitar%20um%20orçamento."
+target="_blank">
+
+<span>💬 WhatsApp</span>
+<span class="arrow">→</span>
+
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="contato">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Contato</div>
+
+<h2>Vamos conversar sobre sua obra?</h2>
+
+<p>
+Envie uma mensagem e solicite seu orçamento.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>Fale com a Brothers</h3>
+
+<a class="contact-link"
+href="tel:+5511954160275">
 📞 (11) 95416-0275
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     SERVIÇOS
-========================= -->
-
-<section id="servicos">
-
-<div class="container">
-
-<h2 class="titulo">
-Nossos serviços
-</h2>
-
-<p class="subtitulo">
-Impermeabilização profissional para diferentes áreas do seu imóvel.
-</p>
-
-<div class="servicos">
-
-
-<div class="card">
-
-<div class="card-img"
-style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=85');">
-</div>
-
-<div class="card-content">
-
-<h3>🏠 Lajes</h3>
-
-<p>
-Proteção contra chuva, umidade e infiltrações.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-img"
-style="background-image:url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=85');">
-</div>
-
-<div class="card-content">
-
-<h3>🏊 Piscinas</h3>
-
-<p>
-Impermeabilização para prevenção de vazamentos.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-img"
-style="background-image:url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=85');">
-</div>
-
-<div class="card-content">
-
-<h3>🚿 Banheiros</h3>
-
-<p>
-Proteção contra umidade e infiltrações.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-img"
-style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=85');">
-</div>
-
-<div class="card-content">
-
-<h3>💧 Reservatórios</h3>
-
-<p>
-Soluções para caixas d'água e reservatórios.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     DIFERENCIAIS
-========================= -->
-
-<section class="diferenciais">
-
-<div class="container">
-
-<h2 class="titulo">
-Por que escolher a Brothers?
-</h2>
-
-<div class="diferenciais-grid">
-
-<div class="diferencial">
-<div class="icone">👷</div>
-<h4>Profissionais especializados</h4>
-</div>
-
-<div class="diferencial">
-<div class="icone">🛠️</div>
-<h4>Materiais profissionais</h4>
-</div>
-
-<div class="diferencial">
-<div class="icone">💰</div>
-<h4>Preço justo</h4>
-</div>
-
-<div class="diferencial">
-<div class="icone">⚡</div>
-<h4>Atendimento rápido</h4>
-</div>
-
-<div class="diferencial">
-<div class="icone">🛡️</div>
-<h4>Garantia conforme serviço contratado</h4>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     GALERIA
-========================= -->
-
-<section id="galeria">
-
-<div class="container">
-
-<h2 class="titulo">
-Confira nossos trabalhos
-</h2>
-
-<p class="subtitulo">
-Alguns exemplos de serviços de impermeabilização.
-</p>
-
-<div class="galeria">
-
-<div class="galeria-item"
-style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85');">
-
-<span>
-Impermeabilização de Laje
-</span>
-
-</div>
-
-
-<div class="galeria-item"
-style="background-image:url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=85');">
-
-<span>
-Impermeabilização de Piscina
-</span>
-
-</div>
-
-
-<div class="galeria-item"
-style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85');">
-
-<span>
-Serviços Profissionais
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     SOBRE
-========================= -->
-
-<section class="sobre" id="sobre">
-
-<div class="container">
-
-<div class="sobre-grid">
-
-<div class="sobre-logo">
-
-<img src="URL-DO-SEU-LOGO"
-alt="Brothers Impermeabilização">
-
-</div>
-
-<div>
-
-<h2>
-BROTHERS IMPERMEABILIZAÇÃO
-</h2>
-
-<p>
-A Brothers Impermeabilização oferece soluções profissionais
-para proteger imóveis contra infiltrações, vazamentos e problemas
-causados pela umidade.
-</p>
-
-<p>
-Atendemos residências, empresas, condomínios e obras,
-buscando a melhor solução para cada necessidade.
-</p>
-
-<h3>
-🛡️ Seu patrimônio merece proteção.
-</h3>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONTATO
-========================= -->
-
-<section class="contato" id="contato">
-
-<div class="container">
-
-<h2 class="titulo">
-Solicite seu orçamento
-</h2>
-
-<p class="subtitulo">
-Entre em contato com a Brothers Impermeabilização.
-</p>
-
-<div class="contato-box">
-
-<h3>
-Fale com um profissional
-</h3>
-
-<div class="contato-info">
-
-<div>
-📞<br>
-<strong>(11) 94036-4528</strong>
-</div>
-
-<div>
-📞<br>
-<strong>(11) 95416-0275</strong>
-</div>
-
-<div class="instagram">
-📸<br>
-<strong>@brothersimpermeabilizacao</strong>
-</div>
-
-</div>
-
-<p>
-<strong>CNPJ:</strong>
-67.290.059/0001-32
-</p>
-
-<br>
-
-<a class="btn btn-whatsapp"
-href="https://wa.me/5511940364528?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20impermeabilização."
+</a>
+
+<a class="contact-link"
+href="tel:+5511940364528">
+📞 (11) 94036-4528
+</a>
+
+<a class="contact-link whatsapp"
+href="https://wa.me/5511954160275?text=Olá%20Brothers%20Impermeabilização,%20gostaria%20de%20solicitar%20um%20orçamento."
 target="_blank">
-
-📲 FALAR NO WHATSAPP
-
+💬 Solicitar orçamento pelo WhatsApp
 </a>
 
 </div>
 
+
+<div class="contact-card">
+
+<h3>Dados da empresa</h3>
+
+<div class="contact-link">
+Brothers Impermeabilização
 </div>
 
+<div class="contact-link">
+CNPJ: 67.290.059/0001-32
+</div>
+
+<div class="contact-link">
+🛡️ Garantia: 6 anos
+</div>
+
+</div>
+
+</div>
+</div>
 </section>
 
+</main>
 
-<!-- =========================
-     RODAPÉ
-========================= -->
+
+<a class="floating"
+href="https://wa.me/5511954160275?text=Olá%20Brothers%20Impermeabilização,%20gostaria%20de%20solicitar%20um%20orçamento."
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
 
 <footer>
 
-<strong>
-BROTHERS IMPERMEABILIZAÇÃO
-</strong>
+<div class="container footer-grid">
 
 <p>
-Proteção contra infiltrações e vazamentos. 💧🛡️
+<strong>Brothers Impermeabilização</strong><br>
+Proteção contra infiltração.
 </p>
 
 <p>
+CNPJ: 67.290.059/0001-32<br>
 © 2026 Brothers Impermeabilização
 </p>
 
+</div>
+
 </footer>
-
-
-<!-- =========================
-     WHATSAPP FLUTUANTE
-========================= -->
-
-<a class="whatsapp-float"
-href="https://wa.me/5511940364528?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
-target="_blank"
-aria-label="Falar no WhatsApp">
-
-📲
-
-</a>
 
 </body>
 </html>
