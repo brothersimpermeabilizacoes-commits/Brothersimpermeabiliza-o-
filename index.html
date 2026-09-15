@@ -1,3 +1,810 @@
+<style>
+/* =========================
+   BROTHERS IMPERMEABILIZAÇÃO
+   ========================= */
+
+.brothers-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172b44;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.brothers-page * {
+  box-sizing: border-box;
+}
+
+.brothers-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* TOPO */
+
+.brothers-header {
+  background: #10263d;
+  padding: 15px 0;
+  color: white;
+}
+
+.brothers-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brothers-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brothers-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.brothers-brand-text h2 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.brothers-brand-text span {
+  font-size: 12px;
+  color: #f39c12;
+}
+
+.brothers-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.brothers-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.brothers-menu a:hover {
+  color: #ff9800;
+}
+
+/* BOTÕES */
+
+.brothers-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.brothers-btn:hover {
+  transform: scale(1.05);
+}
+
+.brothers-whatsapp {
+  background: #18a957;
+  color: white;
+}
+
+.brothers-orange {
+  background: #ff8c00;
+  color: white;
+}
+
+/* CAPA */
+
+.brothers-hero {
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,25,40,0.95),
+      rgba(10,25,40,0.75),
+      rgba(10,25,40,0.30)
+    ),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.brothers-hero-content {
+  max-width: 650px;
+}
+
+.brothers-tag {
+  color: #ff9800;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.brothers-hero h1 {
+  font-size: 52px;
+  line-height: 1.05;
+  margin: 15px 0;
+}
+
+.brothers-hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #eeeeee;
+}
+
+.brothers-phones {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* SEÇÕES */
+
+.brothers-section {
+  padding: 75px 0;
+}
+
+.brothers-title {
+  font-size: 38px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.brothers-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: auto auto 45px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* SERVIÇOS */
+
+.brothers-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.brothers-service {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.brothers-service:hover {
+  transform: translateY(-7px);
+}
+
+.brothers-service-img {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.brothers-service-content {
+  padding: 18px;
+}
+
+.brothers-service h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.brothers-service p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* DIFERENCIAIS */
+
+.brothers-benefits {
+  background: #10263d;
+  color: white;
+  padding: 50px 0;
+}
+
+.brothers-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.brothers-benefit {
+  padding: 15px;
+}
+
+.brothers-benefit-icon {
+  font-size: 42px;
+  color: #ff9800;
+}
+
+.brothers-benefit h4 {
+  margin: 10px 0 0;
+}
+
+/* GALERIA */
+
+.brothers-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.brothers-gallery-item {
+  height: 220px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.brothers-gallery-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-weight: bold;
+}
+
+/* SOBRE */
+
+.brothers-about {
+  background: #10263d;
+  color: white;
+}
+
+.brothers-about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.brothers-about-logo img {
+  max-width: 250px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+/* CONTATO */
+
+.brothers-contact {
+  background: #eeeeee;
+}
+
+.brothers-contact-box {
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.brothers-contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+/* RODAPÉ */
+
+.brothers-footer {
+  background: #071827;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* WHATSAPP FLUTUANTE */
+
+.brothers-whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* CELULAR */
+
+@media(max-width: 900px) {
+
+  .brothers-menu {
+    display: none;
+  }
+
+  .brothers-hero h1 {
+    font-size: 38px;
+  }
+
+  .brothers-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brothers-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brothers-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .brothers-about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 500px) {
+
+  .brothers-hero {
+    min-height: 600px;
+  }
+
+  .brothers-hero h1 {
+    font-size: 32px;
+  }
+
+  .brothers-services {
+    grid-template-columns: 1fr;
+  }
+
+  .brothers-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brothers-title {
+    font-size: 28px;
+  }
+
+}
+</style>
+
+
+<div class="brothers-page">
+
+<!-- TOPO -->
+
+<header class="brothers-header">
+
+  <div class="brothers-container brothers-nav">
+
+    <div class="brothers-brand">
+
+      <!-- COLOQUE A URL DO SEU LOGO AQUI -->
+      <img src="COLE-AQUI-A-URL-DO-SEU-LOGO" alt="Brothers Impermeabilização">
+
+      <div class="brothers-brand-text">
+        <h2>BROTHERS</h2>
+        <span>IMPERMEABILIZAÇÃO</span>
+      </div>
+
+    </div>
+
+
+    <nav class="brothers-menu">
+
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#contato">Contato</a>
+
+    </nav>
+
+
+    <a class="brothers-btn brothers-orange"
+       href="https://wa.me/5511940364528"
+       target="_blank">
+
+      📲 Solicitar Orçamento
+
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- CAPA -->
+
+<section class="brothers-hero" id="inicio">
+
+  <div class="brothers-container">
+
+    <div class="brothers-hero-content">
+
+      <div class="brothers-tag">
+        ▶ BROTHERS IMPERMEABILIZAÇÃO
+      </div>
+
+      <h1>
+        PROTEJA SEU IMÓVEL CONTRA INFILTRAÇÕES E VAZAMENTOS!
+      </h1>
+
+      <p>
+        Soluções profissionais em impermeabilização para residências,
+        empresas e condomínios.
+      </p>
+
+
+      <a class="brothers-btn brothers-whatsapp"
+         href="https://wa.me/5511940364528?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+         target="_blank">
+
+        📲 SOLICITAR ORÇAMENTO
+
+      </a>
+
+
+      <div class="brothers-phones">
+
+        📞 (11) 94036-4528<br>
+        📞 (11) 95416-0275
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVIÇOS -->
+
+<section class="brothers-section" id="servicos">
+
+<div class="brothers-container">
+
+<h2 class="brothers-title">
+Soluções completas em impermeabilização
+</h2>
+
+<p class="brothers-subtitle">
+Trabalhamos com diferentes técnicas e materiais para proteger seu imóvel.
+</p>
+
+
+<div class="brothers-services">
+
+
+<div class="brothers-service">
+
+<div class="brothers-service-img"
+style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80');">
+</div>
+
+<div class="brothers-service-content">
+
+<h3>🏠 Lajes</h3>
+
+<p>Proteção contra chuva, umidade e infiltrações.</p>
+
+</div>
+
+</div>
+
+
+<div class="brothers-service">
+
+<div class="brothers-service-img"
+style="background-image:url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80');">
+</div>
+
+<div class="brothers-service-content">
+
+<h3>🏊 Piscinas</h3>
+
+<p>Soluções para evitar vazamentos e infiltrações.</p>
+
+</div>
+
+</div>
+
+
+<div class="brothers-service">
+
+<div class="brothers-service-img"
+style="background-image:url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80');">
+</div>
+
+<div class="brothers-service-content">
+
+<h3>🚿 Banheiros</h3>
+
+<p>Impermeabilização completa para sua segurança.</p>
+
+</div>
+
+</div>
+
+
+<div class="brothers-service">
+
+<div class="brothers-service-img"
+style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80');">
+</div>
+
+<div class="brothers-service-content">
+
+<h3>💧 Reservatórios</h3>
+
+<p>Proteção para caixas d'água e reservatórios.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DIFERENCIAIS -->
+
+<section class="brothers-benefits">
+
+<div class="brothers-container">
+
+<h2 style="text-align:center;">
+Por que escolher a Brothers?
+</h2>
+
+
+<div class="brothers-benefits-grid">
+
+<div class="brothers-benefit">
+<div class="brothers-benefit-icon">👷</div>
+<h4>Profissionais especializados</h4>
+</div>
+
+<div class="brothers-benefit">
+<div class="brothers-benefit-icon">🛠️</div>
+<h4>Materiais profissionais</h4>
+</div>
+
+<div class="brothers-benefit">
+<div class="brothers-benefit-icon">💰</div>
+<h4>Preço justo</h4>
+</div>
+
+<div class="brothers-benefit">
+<div class="brothers-benefit-icon">⚡</div>
+<h4>Atendimento rápido</h4>
+</div>
+
+<div class="brothers-benefit">
+<div class="brothers-benefit-icon">🛡️</div>
+<h4>Garantia nos serviços</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALERIA -->
+
+<section class="brothers-section" id="galeria">
+
+<div class="brothers-container">
+
+<h2 class="brothers-title">
+Confira nossos trabalhos
+</h2>
+
+<p class="brothers-subtitle">
+Veja alguns dos serviços realizados pela Brothers Impermeabilização.
+</p>
+
+
+<div class="brothers-gallery">
+
+<div class="brothers-gallery-item"
+style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80');">
+
+<span>Impermeabilização de Laje</span>
+
+</div>
+
+
+<div class="brothers-gallery-item"
+style="background-image:url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80');">
+
+<span>Impermeabilização de Piscina</span>
+
+</div>
+
+
+<div class="brothers-gallery-item"
+style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80');">
+
+<span>Serviços Profissionais</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOBRE -->
+
+<section class="brothers-section brothers-about" id="sobre">
+
+<div class="brothers-container">
+
+<div class="brothers-about-content">
+
+<div class="brothers-about-logo">
+
+<img src="COLE-AQUI-A-URL-DO-SEU-LOGO"
+alt="Brothers Impermeabilização">
+
+</div>
+
+
+<div>
+
+<h2>BROTHERS IMPERMEABILIZAÇÃO</h2>
+
+<p>
+A Brothers Impermeabilização oferece soluções profissionais para proteger
+imóveis contra infiltrações, vazamentos e problemas causados pela umidade.
+</p>
+
+<p>
+Trabalhamos buscando a melhor solução para cada necessidade,
+atendendo residências, empresas e condomínios.
+</p>
+
+<h3>🛡️ Seu patrimônio merece proteção.</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTATO -->
+
+<section class="brothers-section brothers-contact" id="contato">
+
+<div class="brothers-container">
+
+<h2 class="brothers-title">
+Solicite seu orçamento
+</h2>
+
+
+<div class="brothers-contact-box">
+
+<h3>
+Fale agora com a Brothers Impermeabilização
+</h3>
+
+
+<div class="brothers-contact-info">
+
+<div>
+📞<br>
+<strong>(11) 94036-4528</strong>
+</div>
+
+<div>
+📞<br>
+<strong>(11) 95416-0275</strong>
+</div>
+
+<div>
+📸<br>
+<strong>@brothersimpermeabilizacao</strong>
+</div>
+
+</div>
+
+
+<p>
+<strong>CNPJ:</strong> 67.290.059/0001-32
+</p>
+
+
+<br>
+
+
+<a class="brothers-btn brothers-whatsapp"
+href="https://wa.me/5511940364528?text=Olá!%20Gostaria%20de%20um%20orçamento."
+target="_blank">
+
+📲 FALAR COM UM PROFISSIONAL
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RODAPÉ -->
+
+<footer class="brothers-footer">
+
+<strong>BROTHERS IMPERMEABILIZAÇÃO</strong>
+
+<br><br>
+
+Proteção contra infiltração. 💧🛡️
+
+<br><br>
+
+© 2026 Brothers Impermeabilização
+
+</footer>
+
+
+<!-- WHATSAPP FLUTUANTE -->
+
+<a class="brothers-whatsapp-float"
+href="https://wa.me/5511940364528"
+target="_blank">
+
+💬
+
+</a>
+
+
+</div>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
